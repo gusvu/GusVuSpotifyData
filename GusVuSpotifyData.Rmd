@@ -1,0 +1,19 @@
+---
+title: "GusVuSpotifyData"
+output: html_notebook
+---
+
+```{r}
+# REQUIRED LIBRARIES
+library(jsonlite)
+library(lubridate)
+library(gghighlight)
+library(spotifyr)
+library(tidyverse)
+library(knitr)
+library(ggplot2)
+library(plotly)
+# READING JSON STREAMING HISTORY
+streamHistory <- fromJSON("StreamingHistory0.json", flatten = TRUE)
+```
+
